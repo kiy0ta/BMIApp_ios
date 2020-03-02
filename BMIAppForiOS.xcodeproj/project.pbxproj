@@ -7,16 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		180E2A64240673D000769669 /* Bmi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E2A63240673D000769669 /* Bmi.swift */; };
-		180E2A66240673F600769669 /* Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E2A65240673F600769669 /* Height.swift */; };
-		180E2A682406740000769669 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E2A672406740000769669 /* Weight.swift */; };
-		180E2A6A2406741100769669 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E2A692406741100769669 /* Message.swift */; };
-		180E2A6C2406743F00769669 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E2A6B2406743F00769669 /* User.swift */; };
-		180E2A6E2406745400769669 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E2A6D2406745400769669 /* Validation.swift */; };
-		180E2A702406746A00769669 /* DataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180E2A6F2406746A00769669 /* DataMapper.swift */; };
 		1858986223FFCBE5005A0908 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858986123FFCBE5005A0908 /* Const.swift */; };
-		18A0FE1B2408AB4900485C1D /* Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A0FE1A2408AB4900485C1D /* Format.swift */; };
-		18B8A33F23E1425C00E01580 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A33E23E1425C00E01580 /* AppDelegate.swift */; };
 		18B8A34123E1425C00E01580 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A34023E1425C00E01580 /* FirstViewController.swift */; };
 		18B8A34323E1425C00E01580 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A34223E1425C00E01580 /* SecondViewController.swift */; };
 		18B8A34623E1425C00E01580 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B8A34423E1425C00E01580 /* Main.storyboard */; };
@@ -46,17 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		180E2A63240673D000769669 /* Bmi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bmi.swift; sourceTree = "<group>"; };
-		180E2A65240673F600769669 /* Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Height.swift; sourceTree = "<group>"; };
-		180E2A672406740000769669 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
-		180E2A692406741100769669 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		180E2A6B2406743F00769669 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		180E2A6D2406745400769669 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
-		180E2A6F2406746A00769669 /* DataMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMapper.swift; sourceTree = "<group>"; };
 		1858986123FFCBE5005A0908 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
-		18A0FE1A2408AB4900485C1D /* Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Format.swift; sourceTree = "<group>"; };
 		18B8A33B23E1425C00E01580 /* BMIAppForiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMIAppForiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18B8A33E23E1425C00E01580 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B8A34023E1425C00E01580 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		18B8A34223E1425C00E01580 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		18B8A34523E1425C00E01580 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,35 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		180E2A60240659BE00769669 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				180E2A63240673D000769669 /* Bmi.swift */,
-				180E2A65240673F600769669 /* Height.swift */,
-				180E2A672406740000769669 /* Weight.swift */,
-				180E2A692406741100769669 /* Message.swift */,
-				180E2A6B2406743F00769669 /* User.swift */,
-				180E2A6D2406745400769669 /* Validation.swift */,
-				180E2A6F2406746A00769669 /* DataMapper.swift */,
-				18A0FE1A2408AB4900485C1D /* Format.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		180E2A61240659D300769669 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		180E2A62240659E600769669 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		18B8A33223E1425C00E01580 = {
 			isa = PBXGroup;
 			children = (
@@ -150,10 +103,6 @@
 		18B8A33D23E1425C00E01580 /* BMIAppForiOS */ = {
 			isa = PBXGroup;
 			children = (
-				180E2A62240659E600769669 /* Controller */,
-				180E2A61240659D300769669 /* View */,
-				180E2A60240659BE00769669 /* Model */,
-				18B8A33E23E1425C00E01580 /* AppDelegate.swift */,
 				18B8A34023E1425C00E01580 /* FirstViewController.swift */,
 				18B8A34223E1425C00E01580 /* SecondViewController.swift */,
 				18B8A34423E1425C00E01580 /* Main.storyboard */,
@@ -316,20 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180E2A702406746A00769669 /* DataMapper.swift in Sources */,
-				180E2A66240673F600769669 /* Height.swift in Sources */,
-				18A0FE1B2408AB4900485C1D /* Format.swift in Sources */,
 				18B8A34323E1425C00E01580 /* SecondViewController.swift in Sources */,
-				18B8A33F23E1425C00E01580 /* AppDelegate.swift in Sources */,
-				180E2A64240673D000769669 /* Bmi.swift in Sources */,
 				18FF294723E970D40023A653 /* CustomCell.swift in Sources */,
 				18B8A34123E1425C00E01580 /* FirstViewController.swift in Sources */,
 				18FF294523E94A3C0023A653 /*  DataSource.swift in Sources */,
-				180E2A6A2406741100769669 /* Message.swift in Sources */,
 				1858986223FFCBE5005A0908 /* Const.swift in Sources */,
-				180E2A682406740000769669 /* Weight.swift in Sources */,
-				180E2A6E2406745400769669 /* Validation.swift in Sources */,
-				180E2A6C2406743F00769669 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
