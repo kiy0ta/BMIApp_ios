@@ -1,5 +1,5 @@
 import UIKit
-
+/// 入力画面クラス
 class FirstViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var inputTitle: UINavigationBar!
     @IBOutlet weak var tutorialText: UILabel!
@@ -49,7 +49,6 @@ class FirstViewController: UIViewController ,UITextFieldDelegate{
             }
         }
         var sameDayData:Bool = isSameDayData()
-        var sameMonthData:Bool = isSameMonthData()
         // bmi計算ボタン押下処理
         bmiCalcButton.addTarget(self, action: #selector(bmiButtonEvent(_:)), for: UIControl.Event.touchUpInside)
         // 削除ボタン押下処理
@@ -126,27 +125,12 @@ class FirstViewController: UIViewController ,UITextFieldDelegate{
         }
         return bool
     }
-    /// 同月のデータが存在するかチェックするメソッド
-    func isSameMonthData()->Bool{
-        var bool = false
-        let text3 = today[..<today.index(today.startIndex, offsetBy: 7)]
-        //        var ccc=allDayList.contains(String(text3))
-        //        print("ccc")
-        //        print(ccc)
-        //        print(allDayList)
-        if(allDayList.contains(String(text3))){
-            //            print("2月のデータがあります！")
-            bool = true
-        }
-        //        print("2月のデータがありません！")
-        return bool
-    }
     /// 同日の日付を取得するメソッド
     func getToday(){
         let dt = Date()
         let dateFormatter = DateFormatter()
         // テスト用
-        //        let modifiedDate = Calendar.current.date(byAdding: .day, value: 1, to: dt)!
+//        let modifiedDate = Calendar.current.date(byAdding: .day, value: -10, to: dt)!
         // 日付は"2020年1月01日"の形に整形する
         dateFormatter.dateFormat = DateFormatter.dateFormat(fromTemplate: ConstClass.FORMAT_PATTERN, options: 0, locale: Locale(identifier: "ja_JP"))
         today = dateFormatter.string(from: dt)
@@ -164,12 +148,12 @@ class FirstViewController: UIViewController ,UITextFieldDelegate{
         bmiResultLabel.text = ""
         bmiRightLabel.text = ConstClass.BMI_RIGHT_TEXT
         messageTextView.text = ""
-        // text fieldに枠線をつける
-        // 枠のカラー
+        /// text fieldに枠線をつける
+        /// 枠のカラー
         messageTextView.layer.borderColor = UIColor.gray.cgColor
-        // 枠の幅
+        /// 枠の幅
         messageTextView.layer.borderWidth = 1.0
-        // 枠を角丸にする
+        /// 枠を角丸にする
         messageTextView.layer.cornerRadius = 10.0
         messageTextView.layer.masksToBounds = true
         bmiCalcButton.backgroundColor = UIColor(red: 1.0, green: 0.7, blue: 0, alpha: 0.4)
